@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "jsonpointer": "^4.1.0",
-        "minimist": "1.1.0"
+        "minimist": "1.2.6"
     },
     "devDependencies": {
         "eslint": "^7.10.0",
