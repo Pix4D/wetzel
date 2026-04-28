@@ -13,20 +13,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Git Checkout
-      uses: actions/checkout@v2
+      - name: Git Checkout
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # ratchet:actions/checkout@v2
 
-    - name: NPM Install
-      run: |
-        npm install
+      - name: NPM Install
+        run: |
+          npm install
 
-    - name: Run tests
-      run: |
-        npm run test
+      - name: Run tests
+        run: |
+          npm run test
 
-    - name: Upload Results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-outputs
-        path: |
-          test/test-output/**
+      - name: Upload Results
+        uses: actions/upload-artifact@82c141cc518b40d92cc801eee768e7aafc9c2fa2 # ratchet:actions/upload-artifact@v2
+        with:
+          name: test-outputs
+          path: |
+            test/test-output/**
